@@ -1,8 +1,3 @@
-FROM ubuntu:latest
-LABEL authors="RGM"
-
-ENTRYPOINT ["top", "-b"]
-
 FROM maven:3.9.14-eclipse-temurin-25 AS build
 WORKDIR /app
 COPY . .
